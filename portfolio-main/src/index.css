@@ -1,0 +1,315 @@
+:root {
+  --normal-blue: #00aeff;
+  --dark-blue: #1900ff;
+  --fucsia: #1130e2;
+  --dark-fucsia: #1900ff;
+  --light: rgb(255, 255, 255);
+  --dark: rgb(5, 5, 5);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+.bg-light-va {
+  background-color: var(--light) !important;
+}
+
+.bg-dark-va {
+  background-color: var(--dark) !important;
+}
+
+.text-dark-va {
+  color: var(--dark) !important;
+}
+
+.text-light-va {
+  color: var(--light) !important;
+}
+
+.bg-blue-normal {
+  background-color: var(--normal-blue);
+}
+
+.bg-blue-dark {
+  background-color: var(--dark-blue);
+}
+
+.text-blue-normal {
+  color: var(--normal-blue);
+}
+
+.text-blue-dark {
+  color: var(--dark-blue);
+}
+
+.text-fucsia {
+  color: var(--fucsia) !important;
+}
+
+.btn-blue {
+  background-color: var(--dark-blue);
+  color: whitesmoke;
+  padding: 0.5rem 2rem;
+}
+
+.btn-blue:hover {
+  background-color: var(--normal-blue);
+  color: whitesmoke;
+}
+
+.link-social {
+  color: var(--dark-fucsia);
+}
+
+.link-social:hover {
+  color: var(--fucsia);
+}
+
+.link-blue {
+  font-size: 0.9rem;
+  display: inline-block;
+  position: relative;
+  color: var(--dark-blue);
+}
+
+.link-blue:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -3px;
+  left: 10%;
+  background-color: var(--dark-blue);
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+
+.link-blue:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+
+.link-blue:hover {
+  color: var(--dark-blue);
+}
+
+.chip {
+  background-color: rgb(79, 76, 76);
+  margin-bottom: 0.3rem;
+  color: var(--normal-blue);
+  font-family: "Fira Code", monospace;
+}
+
+.underline-blue {
+  background-image: linear-gradient(var(--dark-blue) 0 0);
+  background-position: bottom center;
+  background-size: 4rem 0.3rem;
+  background-repeat: no-repeat;
+  padding-bottom: 0.3rem;
+}
+
+.ff-fira-code {
+  font-family: "Fira Code", monospace;
+}
+
+.navbar-toggler {
+  border: none !important;
+  cursor: pointer;
+}
+
+.navbar-toggler:hover {
+  color: var(--normal-blue) !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.fucsia-hover:hover {
+  color: var(--fucsia) !important;
+}
+
+.nav-item:hover {
+  color: var(--normal-blue);
+}
+
+.close:hover {
+  color: var(--normal-blue);
+}
+
+.letter-spacing {
+  letter-spacing: 0.15rem;
+}
+
+.fs-name {
+  font-size: 3.5rem;
+  line-height: 80%;
+  font-weight: 700;
+}
+
+.project-hover {
+  display: inline-block;
+  position: relative;
+}
+
+.project-hover:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 10%;
+  background-color: var(--dark-blue);
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+
+.project-hover:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+
+.project-hover:hover {
+  color: var(--dark-blue) !important;
+}
+
+.form-control {
+  border-radius: 0 !important;
+  border: 0 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05rem !important;
+  background-color: rgb(105, 133, 154) !important;
+}
+
+.form-control::placeholder {
+  color: rgb(209, 206, 206) !important;
+  font-weight: 500 !important;
+}
+
+.form-control:focus {
+  outline: 4px solid var(--dark-blue) !important;
+  background-color: rgb(135, 160, 176) !important;
+}
+
+.tags:before {
+  content: "< ";
+  /* color: var(--fucsia); */
+}
+
+.tags::after {
+  content: " />";
+}
+
+.modal-content {
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+.filter {
+  filter: invert();
+}
+
+.btn-back-top {
+  background-color: var(--dark-blue);
+  position: fixed;
+  color: rgb(255, 255, 255);
+  bottom: 20px;
+  right: 20px;
+  height: 35px;
+  width: 35px;
+  z-index: 1;
+}
+
+.btn-back-top:hover {
+  background-color: var(--normal-blue);
+}
+
+.brightness:hover {
+  filter: brightness(1.2);
+}
+
+.contact-section-height {
+  min-height: calc(100vh - 3.35rem);
+}
+
+@media (max-width: 517.5px) {
+  .contact-section-height {
+    min-height: calc(100vh - 4.7rem);
+  }
+}
+
+.text-blue-gradient {
+  background-image: linear-gradient(70deg, var(--fucsia), var(--dark-blue));
+  background-clip: text;
+  color: transparent;
+}
+
+.fade-in {
+  animation: fadeInAnimation ease 2s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animation-1 {
+  opacity: 0;
+  animation: blur 1s ease-in both;
+}
+
+@keyframes blur {
+  from {
+    opacity: 0;
+    filter: blur(20px);
+  }
+  to {
+    opacity: 1;
+    filter: none;
+  }
+}
+
+.bg-img {
+  background-image: url("/src/assets/fnd.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.project-name {
+  bottom: 50%;
+  display: none;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-card:hover .project-img {
+  filter: brightness(0.4) !important;
+}
+
+.project-card:hover .project-name {
+  display: block;
+}
