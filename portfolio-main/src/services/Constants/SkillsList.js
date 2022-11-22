@@ -16,6 +16,14 @@ const SkillsList = [
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
   },
   {
+    name: "Tailwind Css",
+    img: "https://img.icons8.com/color/512/tailwind_css.png"
+  },
+  {
+    name: "Bootstrap",
+    img: "https://img.icons8.com/color/2x/bootstrap.png"
+  },
+  {
     name: "Redux",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
   },
@@ -48,22 +56,26 @@ const SkillsList = [
     name: "GitHub",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
   },
-  // {
-  //   name: "Canva",
-  //   img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
-  // },
-  // {
-  //   name: "VSCode",
-  //   img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-  // },
-  // {
-  //   name: "Slack",
-  //   img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg"
-  // },
-  // {
-  //   name: "Trello",
-  //   img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
-  // }
+  {
+     name: "React Native",
+     img: "https://img.icons8.com/color/512/react-native.png"
+  },
+  {
+    name: "Typescript",
+    img: "https://img.icons8.com/color/2x/typescript.png"
+  },
+  {
+     name: "VSCode",
+     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+  },
+  {
+     name: "Slack",
+     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg"
+  },
+  {
+     name: "Trello",
+     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
+  }
 ];
 
 export default SkillsList;
