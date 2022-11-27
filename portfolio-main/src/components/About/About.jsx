@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import Skills from "../Skills/Skills";
-import CV from "../../assets/Santiagomiranda.pdf";
+import CV from "../../assets/Currículum Ingles-Santiago-Miranda.pdf";
 import foto from "./ft.png"
 
 const About = ({ about }) => {
@@ -46,7 +46,7 @@ const About = ({ about }) => {
           <div className="d-flex justify-content-center" id="btn-cv">
             <a
               href={CV}
-              download="Santiagomiranda.pdf"
+              download="Currículum Ingles-Santiago-Miranda.pdf"
               className="btn-blue d-inline-block mt-3 text-decoration-none letter-spacing fw-bold shadow border-white border-2 border"
             >
               Download CV
